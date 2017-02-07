@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		054493EA2E6A7466D5671D5D23972FE3 /* StormpathError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAAEF0CE11282E755F4F7E43AB4075A /* StormpathError.swift */; };
+		0A842624DCB074E4857CADD5B319861A /* Stormpath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796A6BFA4211192B3BD47088140BFE34 /* Stormpath.swift */; };
+		0FAC279D150B036FC4FD272A153DB911 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DD142CF513FFE9552D948D40570332 /* Logger.swift */; };
+		10072733C1646D685F53AFA21E93F94E /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339E86B5DCB42D09B4F2B9A82AAE6A13 /* APIService.swift */; };
+		11B6D73370DAD5781406CF89CEAB920B /* LoginProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9935C0CB81FBC4FB5A229747F6F8AA8D /* LoginProvider.swift */; };
+		3ECDD98A673FA7DE5CB65007AFFBE771 /* FacebookLoginProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA4DAEDD05EAD5FE9A163628AD6F659 /* FacebookLoginProvider.swift */; };
+		416A975534A5B5BA0C55487DD87CEDCA /* Pods-OpenHack-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6074955BE3A221FC8A415C1118D23F73 /* Pods-OpenHack-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47668077FF33EBAD0459C232F6BE31FC /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0952EC2F075BE845149EEECC17C7FBD7 /* Account.swift */; };
+		4A5030F7A6E819CA68F8BA4D423ABF47 /* SocialLoginAPIRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF60E36EE6450532A0DE3BB9E9EE2710 /* SocialLoginAPIRequestManager.swift */; };
+		57F53AE1EAE04C6322A0659FCE6C619E /* Stormpath-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 43CB8E3B1CF00135BF9ED19D018188D4 /* Stormpath-dummy.m */; };
+		5B1131A389318FD3EF4DF85EA208877E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		5F282E7473E7497A89CF8ED76C981EA1 /* SocialLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F2E68499B6DB545AB000972AB25E99 /* SocialLoginService.swift */; };
+		5FF5357C24CC0D94078247F7216542FE /* Stormpath-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B5080713C56199EA9A3F530497BBBDE9 /* Stormpath-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64B95172BF5EC3B0F1DFE0941D61311E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		66F17B581932B2D354675C47AAAC0869 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ED18125AD04150FFEE96E9B1C95E16 /* KeychainService.swift */; };
+		7D515F9DA4022897014C0992F5F246D5 /* APIRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10105A40F2B74E4430B3E0D1018B790 /* APIRequestManager.swift */; };
+		7DB7D6B4E66E4C3160E7844AE8248624 /* GoogleLoginProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B018B7F604AF684C2D814A82AAE90296 /* GoogleLoginProvider.swift */; };
+		A6DA788A4F16C17308E0D2D939269945 /* OAuthAPIRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF452321B3EF1AF42EDE60429BD37BA /* OAuthAPIRequestManager.swift */; };
+		A9B75D5D00FAA032520EBCDE22E6D219 /* Pods-OpenHack-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8386C76BE8C4020C7494389C43DDFD19 /* Pods-OpenHack-dummy.m */; };
+		B89804802B9C6D19AAF87F0B918A84BD /* StormpathSocialProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F9F0A566A3982DA99B1185592CAC77 /* StormpathSocialProvider.swift */; };
+		BE9F17B799DEA4C0EF134E2BEA7D1BB2 /* StormpathSocialProviderConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1DFA5A2FF50C867FEF4F1ECEAD89E9 /* StormpathSocialProviderConfiguration.swift */; };
+		D1DF47C825C1F74BFDA1BF6D53EDAEF7 /* StormpathConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31E6AF02DA0C5CD97E4DE48C78BBA8F /* StormpathConfiguration.swift */; };
+		E15786EEE6424EFA48012960A9F32AFA /* RegistrationAPIRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77EA81B409450D4C0DDD013B98C3772 /* RegistrationAPIRequestManager.swift */; };
+		E3502ACD1B8E6280C1A54505C412480D /* ResetPasswordAPIRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C2FCC28BBE94BF73268BDDE638D7DC /* ResetPasswordAPIRequestManager.swift */; };
+		F1156B7B6BC00AC03598B86255FE1A72 /* MeAPIRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432F8D3F8D45B7163A0CCFD1E3B94053 /* MeAPIRequestManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7965DABD15CB510E0248136B10C93D7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E2363204CA5685A6DBD5F15149EF8A5;
+			remoteInfo = Stormpath;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00ED18125AD04150FFEE96E9B1C95E16 /* KeychainService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainService.swift; path = Stormpath/Keychain/KeychainService.swift; sourceTree = "<group>"; };
+		01F9F0A566A3982DA99B1185592CAC77 /* StormpathSocialProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StormpathSocialProvider.swift; path = Stormpath/StormpathSocialProvider.swift; sourceTree = "<group>"; };
+		0952EC2F075BE845149EEECC17C7FBD7 /* Account.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Account.swift; path = Stormpath/Account.swift; sourceTree = "<group>"; };
+		274BF800618B21FF30B84CB8362B11B6 /* Pods-OpenHack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenHack.release.xcconfig"; sourceTree = "<group>"; };
+		2EAAEF0CE11282E755F4F7E43AB4075A /* StormpathError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StormpathError.swift; path = Stormpath/Networking/StormpathError.swift; sourceTree = "<group>"; };
+		339E86B5DCB42D09B4F2B9A82AAE6A13 /* APIService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIService.swift; path = Stormpath/Networking/APIService.swift; sourceTree = "<group>"; };
+		3598DD535EF214B8DAC0A79909DC7787 /* Pods-OpenHack-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OpenHack-resources.sh"; sourceTree = "<group>"; };
+		432F8D3F8D45B7163A0CCFD1E3B94053 /* MeAPIRequestManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MeAPIRequestManager.swift; path = Stormpath/Networking/MeAPIRequestManager.swift; sourceTree = "<group>"; };
+		43CB8E3B1CF00135BF9ED19D018188D4 /* Stormpath-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Stormpath-dummy.m"; sourceTree = "<group>"; };
+		5777DEA9572FEBB48900245C843CCF87 /* Stormpath.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Stormpath.modulemap; sourceTree = "<group>"; };
+		57DD142CF513FFE9552D948D40570332 /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Stormpath/Networking/Logger.swift; sourceTree = "<group>"; };
+		6074955BE3A221FC8A415C1118D23F73 /* Pods-OpenHack-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OpenHack-umbrella.h"; sourceTree = "<group>"; };
+		629FABE83E566B7436DAF960563BC027 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D55D20839FB4572BEFBB5B370E984FE /* Pods_OpenHack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OpenHack.framework; path = "Pods-OpenHack.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		740E26EBE12C58FF0D1FB88088C3DEBB /* Pods-OpenHack.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-OpenHack.modulemap"; sourceTree = "<group>"; };
+		796A6BFA4211192B3BD47088140BFE34 /* Stormpath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stormpath.swift; path = Stormpath/Core/Stormpath.swift; sourceTree = "<group>"; };
+		79BB3C3C09B6A95A7CF6C5A108ACFF31 /* Stormpath.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Stormpath.framework; path = Stormpath.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BA4DAEDD05EAD5FE9A163628AD6F659 /* FacebookLoginProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FacebookLoginProvider.swift; path = "Stormpath/Social Login/FacebookLoginProvider.swift"; sourceTree = "<group>"; };
+		8386C76BE8C4020C7494389C43DDFD19 /* Pods-OpenHack-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OpenHack-dummy.m"; sourceTree = "<group>"; };
+		88B7EE1B6C803FC9D3D4C7F5BB1D64D6 /* Pods-OpenHack-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OpenHack-frameworks.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9928D036410A5EAB977B52FCC604B719 /* Stormpath-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Stormpath-prefix.pch"; sourceTree = "<group>"; };
+		9935C0CB81FBC4FB5A229747F6F8AA8D /* LoginProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoginProvider.swift; path = "Stormpath/Social Login/LoginProvider.swift"; sourceTree = "<group>"; };
+		A735C3F087308CEFE683D4E22F6C77B1 /* Stormpath.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Stormpath.xcconfig; sourceTree = "<group>"; };
+		AF60E36EE6450532A0DE3BB9E9EE2710 /* SocialLoginAPIRequestManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocialLoginAPIRequestManager.swift; path = Stormpath/Networking/SocialLoginAPIRequestManager.swift; sourceTree = "<group>"; };
+		B018B7F604AF684C2D814A82AAE90296 /* GoogleLoginProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GoogleLoginProvider.swift; path = "Stormpath/Social Login/GoogleLoginProvider.swift"; sourceTree = "<group>"; };
+		B10105A40F2B74E4430B3E0D1018B790 /* APIRequestManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIRequestManager.swift; path = Stormpath/Networking/APIRequestManager.swift; sourceTree = "<group>"; };
+		B31E6AF02DA0C5CD97E4DE48C78BBA8F /* StormpathConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StormpathConfiguration.swift; path = Stormpath/StormpathConfiguration.swift; sourceTree = "<group>"; };
+		B5080713C56199EA9A3F530497BBBDE9 /* Stormpath-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Stormpath-umbrella.h"; sourceTree = "<group>"; };
+		BD02863C1AF5DF730CA22A91A8A0AE9D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD1DFA5A2FF50C867FEF4F1ECEAD89E9 /* StormpathSocialProviderConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StormpathSocialProviderConfiguration.swift; path = Stormpath/StormpathSocialProviderConfiguration.swift; sourceTree = "<group>"; };
+		BDF452321B3EF1AF42EDE60429BD37BA /* OAuthAPIRequestManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthAPIRequestManager.swift; path = Stormpath/Networking/OAuthAPIRequestManager.swift; sourceTree = "<group>"; };
+		C6C2FCC28BBE94BF73268BDDE638D7DC /* ResetPasswordAPIRequestManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResetPasswordAPIRequestManager.swift; path = Stormpath/Networking/ResetPasswordAPIRequestManager.swift; sourceTree = "<group>"; };
+		C9F2E68499B6DB545AB000972AB25E99 /* SocialLoginService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocialLoginService.swift; path = Stormpath/Networking/SocialLoginService.swift; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E105AB6F0D072E8AC63D6A2E1D3B6B95 /* Pods-OpenHack-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OpenHack-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E960CD1BDED82D93FB7E1EEE82C96CC6 /* Pods-OpenHack-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OpenHack-acknowledgements.plist"; sourceTree = "<group>"; };
+		F77EA81B409450D4C0DDD013B98C3772 /* RegistrationAPIRequestManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegistrationAPIRequestManager.swift; path = Stormpath/Networking/RegistrationAPIRequestManager.swift; sourceTree = "<group>"; };
+		FFD34C28DDE70DC45344E00365273EC7 /* Pods-OpenHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenHack.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C6C8A958AFD8DDDFC3AC6E625C5BD45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B1131A389318FD3EF4DF85EA208877E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA960E6AF23189A6CC26311CEAC2B922 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64B95172BF5EC3B0F1DFE0941D61311E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		271FD45FF6B86840CDCEC7393B4E33D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9CEA30040F68E3026278AED11CC776F8 /* Stormpath */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5857E4265794CD3E25ABC48944FB6750 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D55D20839FB4572BEFBB5B370E984FE /* Pods_OpenHack.framework */,
+				79BB3C3C09B6A95A7CF6C5A108ACFF31 /* Stormpath.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				271FD45FF6B86840CDCEC7393B4E33D5 /* Pods */,
+				5857E4265794CD3E25ABC48944FB6750 /* Products */,
+				ABBC8CE8FF1EE93408B65FADBCA03284 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9CEA30040F68E3026278AED11CC776F8 /* Stormpath */ = {
+			isa = PBXGroup;
+			children = (
+				0952EC2F075BE845149EEECC17C7FBD7 /* Account.swift */,
+				B10105A40F2B74E4430B3E0D1018B790 /* APIRequestManager.swift */,
+				339E86B5DCB42D09B4F2B9A82AAE6A13 /* APIService.swift */,
+				7BA4DAEDD05EAD5FE9A163628AD6F659 /* FacebookLoginProvider.swift */,
+				B018B7F604AF684C2D814A82AAE90296 /* GoogleLoginProvider.swift */,
+				00ED18125AD04150FFEE96E9B1C95E16 /* KeychainService.swift */,
+				57DD142CF513FFE9552D948D40570332 /* Logger.swift */,
+				9935C0CB81FBC4FB5A229747F6F8AA8D /* LoginProvider.swift */,
+				432F8D3F8D45B7163A0CCFD1E3B94053 /* MeAPIRequestManager.swift */,
+				BDF452321B3EF1AF42EDE60429BD37BA /* OAuthAPIRequestManager.swift */,
+				F77EA81B409450D4C0DDD013B98C3772 /* RegistrationAPIRequestManager.swift */,
+				C6C2FCC28BBE94BF73268BDDE638D7DC /* ResetPasswordAPIRequestManager.swift */,
+				AF60E36EE6450532A0DE3BB9E9EE2710 /* SocialLoginAPIRequestManager.swift */,
+				C9F2E68499B6DB545AB000972AB25E99 /* SocialLoginService.swift */,
+				796A6BFA4211192B3BD47088140BFE34 /* Stormpath.swift */,
+				B31E6AF02DA0C5CD97E4DE48C78BBA8F /* StormpathConfiguration.swift */,
+				2EAAEF0CE11282E755F4F7E43AB4075A /* StormpathError.swift */,
+				01F9F0A566A3982DA99B1185592CAC77 /* StormpathSocialProvider.swift */,
+				BD1DFA5A2FF50C867FEF4F1ECEAD89E9 /* StormpathSocialProviderConfiguration.swift */,
+				F1C0CF0DCB0F568EC6B50436AB4D9484 /* Support Files */,
+			);
+			name = Stormpath;
+			path = Stormpath;
+			sourceTree = "<group>";
+		};
+		ABBC8CE8FF1EE93408B65FADBCA03284 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D93F55AF5F780CB6CDB713A0B416A315 /* Pods-OpenHack */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D93F55AF5F780CB6CDB713A0B416A315 /* Pods-OpenHack */ = {
+			isa = PBXGroup;
+			children = (
+				629FABE83E566B7436DAF960563BC027 /* Info.plist */,
+				740E26EBE12C58FF0D1FB88088C3DEBB /* Pods-OpenHack.modulemap */,
+				E105AB6F0D072E8AC63D6A2E1D3B6B95 /* Pods-OpenHack-acknowledgements.markdown */,
+				E960CD1BDED82D93FB7E1EEE82C96CC6 /* Pods-OpenHack-acknowledgements.plist */,
+				8386C76BE8C4020C7494389C43DDFD19 /* Pods-OpenHack-dummy.m */,
+				88B7EE1B6C803FC9D3D4C7F5BB1D64D6 /* Pods-OpenHack-frameworks.sh */,
+				3598DD535EF214B8DAC0A79909DC7787 /* Pods-OpenHack-resources.sh */,
+				6074955BE3A221FC8A415C1118D23F73 /* Pods-OpenHack-umbrella.h */,
+				FFD34C28DDE70DC45344E00365273EC7 /* Pods-OpenHack.debug.xcconfig */,
+				274BF800618B21FF30B84CB8362B11B6 /* Pods-OpenHack.release.xcconfig */,
+			);
+			name = "Pods-OpenHack";
+			path = "Target Support Files/Pods-OpenHack";
+			sourceTree = "<group>";
+		};
+		F1C0CF0DCB0F568EC6B50436AB4D9484 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BD02863C1AF5DF730CA22A91A8A0AE9D /* Info.plist */,
+				5777DEA9572FEBB48900245C843CCF87 /* Stormpath.modulemap */,
+				A735C3F087308CEFE683D4E22F6C77B1 /* Stormpath.xcconfig */,
+				43CB8E3B1CF00135BF9ED19D018188D4 /* Stormpath-dummy.m */,
+				9928D036410A5EAB977B52FCC604B719 /* Stormpath-prefix.pch */,
+				B5080713C56199EA9A3F530497BBBDE9 /* Stormpath-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Stormpath";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		796989358219B99B96AB43ED31A53371 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FF5357C24CC0D94078247F7216542FE /* Stormpath-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A88EC67C9510AEC3E859B460E935D594 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				416A975534A5B5BA0C55487DD87CEDCA /* Pods-OpenHack-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1E2363204CA5685A6DBD5F15149EF8A5 /* Stormpath */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CEC1F304BB0AF18CA6602E9A3853098 /* Build configuration list for PBXNativeTarget "Stormpath" */;
+			buildPhases = (
+				03807465783E09849373CCB433B97EED /* Sources */,
+				BA960E6AF23189A6CC26311CEAC2B922 /* Frameworks */,
+				796989358219B99B96AB43ED31A53371 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Stormpath;
+			productName = Stormpath;
+			productReference = 79BB3C3C09B6A95A7CF6C5A108ACFF31 /* Stormpath.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2D5607EE64D7CAED28B20EE23F4F6088 /* Pods-OpenHack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC9E1E840D38514DE15B8693214063AC /* Build configuration list for PBXNativeTarget "Pods-OpenHack" */;
+			buildPhases = (
+				4FAE4C79D066FA350EF57A7469EAAA10 /* Sources */,
+				8C6C8A958AFD8DDDFC3AC6E625C5BD45 /* Frameworks */,
+				A88EC67C9510AEC3E859B460E935D594 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9BFDB41CB9D29C40FAC9496C13218FDC /* PBXTargetDependency */,
+			);
+			name = "Pods-OpenHack";
+			productName = "Pods-OpenHack";
+			productReference = 6D55D20839FB4572BEFBB5B370E984FE /* Pods_OpenHack.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 5857E4265794CD3E25ABC48944FB6750 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D5607EE64D7CAED28B20EE23F4F6088 /* Pods-OpenHack */,
+				1E2363204CA5685A6DBD5F15149EF8A5 /* Stormpath */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03807465783E09849373CCB433B97EED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47668077FF33EBAD0459C232F6BE31FC /* Account.swift in Sources */,
+				7D515F9DA4022897014C0992F5F246D5 /* APIRequestManager.swift in Sources */,
+				10072733C1646D685F53AFA21E93F94E /* APIService.swift in Sources */,
+				3ECDD98A673FA7DE5CB65007AFFBE771 /* FacebookLoginProvider.swift in Sources */,
+				7DB7D6B4E66E4C3160E7844AE8248624 /* GoogleLoginProvider.swift in Sources */,
+				66F17B581932B2D354675C47AAAC0869 /* KeychainService.swift in Sources */,
+				0FAC279D150B036FC4FD272A153DB911 /* Logger.swift in Sources */,
+				11B6D73370DAD5781406CF89CEAB920B /* LoginProvider.swift in Sources */,
+				F1156B7B6BC00AC03598B86255FE1A72 /* MeAPIRequestManager.swift in Sources */,
+				A6DA788A4F16C17308E0D2D939269945 /* OAuthAPIRequestManager.swift in Sources */,
+				E15786EEE6424EFA48012960A9F32AFA /* RegistrationAPIRequestManager.swift in Sources */,
+				E3502ACD1B8E6280C1A54505C412480D /* ResetPasswordAPIRequestManager.swift in Sources */,
+				4A5030F7A6E819CA68F8BA4D423ABF47 /* SocialLoginAPIRequestManager.swift in Sources */,
+				5F282E7473E7497A89CF8ED76C981EA1 /* SocialLoginService.swift in Sources */,
+				57F53AE1EAE04C6322A0659FCE6C619E /* Stormpath-dummy.m in Sources */,
+				0A842624DCB074E4857CADD5B319861A /* Stormpath.swift in Sources */,
+				D1DF47C825C1F74BFDA1BF6D53EDAEF7 /* StormpathConfiguration.swift in Sources */,
+				054493EA2E6A7466D5671D5D23972FE3 /* StormpathError.swift in Sources */,
+				B89804802B9C6D19AAF87F0B918A84BD /* StormpathSocialProvider.swift in Sources */,
+				BE9F17B799DEA4C0EF134E2BEA7D1BB2 /* StormpathSocialProviderConfiguration.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FAE4C79D066FA350EF57A7469EAAA10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9B75D5D00FAA032520EBCDE22E6D219 /* Pods-OpenHack-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9BFDB41CB9D29C40FAC9496C13218FDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Stormpath;
+			target = 1E2363204CA5685A6DBD5F15149EF8A5 /* Stormpath */;
+			targetProxy = 7965DABD15CB510E0248136B10C93D7C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5A63C1BD5E342ED20EE99A507D674793 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 274BF800618B21FF30B84CB8362B11B6 /* Pods-OpenHack.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-OpenHack/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OpenHack/Pods-OpenHack.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_OpenHack;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		673254EEAF0B5BF4596080C749645884 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D2B216D1415CF3086154D697DE7ECA79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A735C3F087308CEFE683D4E22F6C77B1 /* Stormpath.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Stormpath/Stormpath-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Stormpath/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Stormpath/Stormpath.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Stormpath;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		EDFF31EF3B5ECFB1207D7B827D85F91A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A735C3F087308CEFE683D4E22F6C77B1 /* Stormpath.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Stormpath/Stormpath-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Stormpath/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Stormpath/Stormpath.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Stormpath;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F572048092FF29BB8624186C58185C8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFD34C28DDE70DC45344E00365273EC7 /* Pods-OpenHack.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-OpenHack/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OpenHack/Pods-OpenHack.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_OpenHack;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */,
+				673254EEAF0B5BF4596080C749645884 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CEC1F304BB0AF18CA6602E9A3853098 /* Build configuration list for PBXNativeTarget "Stormpath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2B216D1415CF3086154D697DE7ECA79 /* Debug */,
+				EDFF31EF3B5ECFB1207D7B827D85F91A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC9E1E840D38514DE15B8693214063AC /* Build configuration list for PBXNativeTarget "Pods-OpenHack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F572048092FF29BB8624186C58185C8F /* Debug */,
+				5A63C1BD5E342ED20EE99A507D674793 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
